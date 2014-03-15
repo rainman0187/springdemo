@@ -1,4 +1,4 @@
-package com.manishchhabra.blog.controller;
+package com.rezwan.core.action; 
  
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
