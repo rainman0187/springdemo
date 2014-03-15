@@ -1,0 +1,38 @@
+<project name="karma411" default="compile">
+
+	<property name="tomcat.common.lib.dir" value="C:/tomcat6/lib" />
+	<property name="webinf.lib.dir" value="WEB-INF/lib" />
+	<property name="classes.dir" value="WEB-INF/classes" />
+	<property name="src.dir" value="src" />
+	
+	<path id="classpath">
+		<fileset dir="${webinf.lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${tomcat.common.lib.dir}">
+			<include name="jsp-api.jar"/>
+			<include name="servlet-api.jar"/>
+		</fileset>
+	</path>	
+
+    <target name="compile" >
+    	<delete dir="${classes.dir}"/>
+		<mkdir dir="${classes.dir}"/>
+    	
+    	<javac srcdir="${src.dir}" destdir="${classes.dir}" debug="true">
+			<classpath>
+				<path refid="classpath" />
+			</classpath>	
+    	</javac>
+
+		<copy todir="${classes.dir}">
+			<fileset dir="${src.dir}">
+	  			<include name="*.properties"/>
+				<include name="*.xml"/>
+			</fileset>
+  		</copy>	
+    </target>
+
+</project>
+
+
