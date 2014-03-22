@@ -24,7 +24,7 @@
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
 
-	<bean id="userDao" class="com.rezwan.dao.UserDao">
+	<bean id="userDao" class="com.rezwan.dao.UserDAO">
 		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
 	</bean>
 	 
