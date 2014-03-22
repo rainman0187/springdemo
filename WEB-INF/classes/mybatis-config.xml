@@ -9,7 +9,7 @@
 		<setting name="lazyLoadingEnabled" value="false" />
 	</settings>
 	<typeAliases>
-		<typeAlias alias="account" type="com.rezwan.model.User" />
+		<typeAlias alias="user" type="com.rezwan.model.User" />
 	</typeAliases>
 
 </configuration>
