@@ -14,5 +14,8 @@
 	<classpathentry kind="lib" path="C:/cygwin/home/abir/git/springdemo/WEB-INF/lib/spring-tx-3.2.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/cygwin/home/abir/git/springdemo/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/cygwin/home/abir/git/springdemo/WEB-INF/lib/spring-webmvc-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/tomcat6/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/tomcat6/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/cygwin/home/abir/git/springdemo/WEB-INF/lib/mybatis-spring-1.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
