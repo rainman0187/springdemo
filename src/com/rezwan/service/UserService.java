@@ -1,13 +1,30 @@
-package com.rezwan.service;  
+package com.rezwan.service;
 
-import java.util.List;
+ 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.rezwan.dao.UserDAO;
 import com.rezwan.model.User;
 
-public interface UserService {
+@Service
+public class UserService {
 
-    public void saveUser(User user);
-    public void updateUser(User user);
-    public void deleteUser(String id);
-    public List<User> getAllUser();
+  @Autowired
+  private UserDAO userDAO;
+ 
+
+  
+  @Transactional
+  public void updateUser(User user) {
+    userDAO.updateUser(user); 
+  }
+
+  @Transactional
+  public void saveUser(User user) {
+    userDAO.updateUser(user);
+   
+  }
+
 }
