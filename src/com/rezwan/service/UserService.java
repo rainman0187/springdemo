@@ -23,7 +23,7 @@ public class UserService {
 
   @Transactional
   public void saveUser(User user) {
-    userDAO.updateUser(user);
+    userDAO.saveUser(user);
    
   }
 
