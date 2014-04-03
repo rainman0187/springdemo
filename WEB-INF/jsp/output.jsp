@@ -2,6 +2,7 @@
 <%@page import="com.rezwan.service.UserService"%>
 <%@page import="org.springframework.beans.factory.annotation.Autowired"%>
 <%@page import="org.springframework.web.context.support.SpringBeanAutowiringSupport"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%!
 	public void jspInit() 
@@ -34,7 +35,11 @@
 <body>
     <h2>Here is the message from HelloSpringController.</h2>
     <p>
-       aa ${message}
+        ${message}
+       
+        <img src='<c:url value='/resources/images/hello_world.png' />'   />
+    
+       
     </p> 
 </body>
 </html>
