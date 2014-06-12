@@ -1,6 +1,6 @@
 <project name="karma411" default="compile">
 
-	<property name="tomcat.common.lib.dir" value="/Users/rezwanabir/Applications/tomcat6/lib" />
+	<property name="tomcat.common.lib.dir" value="C:/tomcat6/lib" />
 	<property name="webinf.lib.dir" value="WEB-INF/lib" />
 	<property name="classes.dir" value="WEB-INF/classes" />
 	<property name="src.dir" value="src" />
